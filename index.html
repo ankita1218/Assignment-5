@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="restaurantApp">
+<head>
+    <meta charset="utf-8">
+    <title>Restaurant App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body ng-controller="MainController as mainCtrl">
+    <div>
+        <button ng-click="mainCtrl.goTo('signUp')">Sign Up</button>
+        <button ng-click="mainCtrl.goTo('myInfo')">My Info</button>
+    </div>
+    
+    <div ng-view></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
